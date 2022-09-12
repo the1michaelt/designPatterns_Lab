@@ -1,3 +1,5 @@
+from chat_history import chat_history
+from order import order
 class Logger:
     def __init__(self):
         """create a Logger class with a log_transaction() method 
@@ -19,16 +21,36 @@ class Logger:
         self.daily_sales = sales
         self.transaction_count = count
         
-        order_placed # the number of the product
-        order_location # number of the location
-        transaction_count +=1  #each transaction increases the count by one
-        self.daily_sales += order_placed.price #add order price to the daily sales
+        # order_placed # the number of the product
+        # order_location # number of the location
+        # transaction_count +=1  #each transaction increases the count by one
+        # self.daily_sales += order_placed.price #add order price to the daily sales
         
             
     def write_to_log(word):
-        file =open("log.txt", "a")
-        file.write("Sales for today are {word}!\n")
-        file.close()
+        activity = open("log.txt", "a")
+        activity.write(f"{transaction_count}: {order_placed} at {order_location}-- {order_price} Total: {daily_sales}\n")
+        activity.close()
+        activity.write_to_log(word)  # this?
 
     write_to_log("great")
+
+####
+# from chat_history import chat_history
+
+# class User:
+#     def send_message(self, message):
+#         chat_history.messages.append(message)
+
+# from user import User
+
+# user_one = User()
+# user_two = User()
+
+# user_one.send_message("Hello.")
+# user_two.send_message("Hi.")
+# user_one.send_message("What are you doing this weekend?")
+# user_two.send_message("Camping in the Rocky Mountains.")
+# user_one.send_message("Sounds exciting. Be safe!")
+# chat_history.display_history()
     

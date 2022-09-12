@@ -26,18 +26,18 @@ class Franchise:
         else:
             self.place_order() #repeat until user enters a valid choice
     
-    def order_location(self):
-        location_number = [1, 2, 3]      
-        order_location = location_number[(int(input('''Where would you like to buy your food? 
-        1: "Brooklyn"
-        2: "Queens"
-        3: "Manhattan"
-        '''))) - 1]
+    # def order_location(self):
+    #     location_number = [1, 2, 3]      
+    #     order_location = location_number[(int(input('''Where would you like to buy your food? 
+    #     1: "Brooklyn"
+    #     2: "Queens"
+    #     3: "Manhattan"
+    #     '''))) - 1]
     
-        if order_location == 0 or 1 or 2:
-            return order_location #user makes a choice
-        else:
-            self.order_location()  # repeat until user enters a valid choice
+    #     if order_location == 0 or 1 or 2:
+    #         return order_location #user makes a choice
+    #     else:
+    #         self.order_location()  # repeat until user enters a valid choice
     
         # use the static Factory method to get an OBJECT based on what choice the user made
         # # depending on what number is typed in for order_placed, call the Factory method and pass in the appropraite string
