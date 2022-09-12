@@ -1,11 +1,10 @@
 from order import Order
 
 class NorthIndianFare(Order):
-    """Child class
+    """Child class, "North Indian"
     """    
-    def __init__(self, name, price):
-        super().__init__()
-        self.dish_name = name
-        self.price = price
+    def __init__(self):
+        super().__init__(0, 22) #0 is the choice for "North Indian"
+
         
         

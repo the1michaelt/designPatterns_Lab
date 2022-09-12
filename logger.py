@@ -1,5 +1,5 @@
 class Logger:
-    def __init__():
+    def __init__(self):
         """create a Logger class with a log_transaction() method 
         that will accept an Order object and store number and:
             Increase the Logger’s transaction_count by one
@@ -14,16 +14,21 @@ class Logger:
              a single instance of a Logger object inside the logger.py file and 
              import this instance into the Franchise class to be shared by all instantiations.
         """        
-        pass
 
-    def log_transaction(self):
-        self.daily_sales: #int
-        self.transaction_count: #int
+    def log_transaction(self, sales, count):
+        self.daily_sales = sales
+        self.transaction_count = count
+        
+        order_placed # the number of the product
+        order_location # number of the location
+        transaction_count +=1  #each transaction increases the count by one
+        self.daily_sales += order_placed.price #add order price to the daily sales
+        
             
     def write_to_log(word):
-        file = open("log.txt", "a")
+        file =open("log.txt", "a")
         file.write("Sales for today are {word}!\n")
         file.close()
 
-    write_to_log("evening!")
+    write_to_log("great")
     

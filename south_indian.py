@@ -1,9 +1,8 @@
 from order import Order
 
 class SouthIndianFare(Order):
-    """Child class
+    """Child class, South Indian
     """
-    def __init__(self, name, price):
-        super().__init__()
-        self.dish_name = name
-        self.price = price
+    def __init__(self):
+        super().__init__(1, 22)
+     
