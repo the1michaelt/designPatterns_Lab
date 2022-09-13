@@ -3,7 +3,7 @@ class Order:
     """    
     def __init__(self, style, price):
         self.food_style = style
-        self.price = price
+        self.food_price = price
 
         
         

@@ -10,8 +10,11 @@ class OrderFactory:
     This method should accept a string as a parameter (ex “Pizza” or whatever food) 
     and return the corresponding type of Order child class instantiation (ex Pizza() )
     """         
+    def __init__(self):
+        pass
+
     @staticmethod
-    def create_order(self, order_placed): #string; Order is the parameter? 
+    def create_order(order_placed): #string; Order is the parameter? 
         """ Based on the input value (the order), an object is created (the type of food)
         """        
         if order_placed == 0:

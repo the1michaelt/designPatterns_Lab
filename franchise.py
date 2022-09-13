@@ -6,50 +6,56 @@ class Franchise:
     to instantiate instances of the three different Order child classes.
             Instantiate 3 separate Franchise objects .
         Call place_order on each franchise object multiple times.
+        
+        Use the Singleton pattern (as shown in the Design Patterns Demo repo) to create a single instance of a Logger object inside the logger.py file and import this instance into the Franchise class to be shared by all instantiations.   
     """    
     def __init__(self, location):
         self.location_number = location
       
-        # Focus on instantiating the objects and passing in the location.
+    # Focus on instantiating the objects and passing in the location.
 
     def place_order(self):
         food_style_choices = [1, 2, 3]      
-        order_placed = food_style_choices[(int(input('''\nHello! Thank you for dining at Indian Palace today!
+        order_placed = food_style_choices[(int(input(f'''\nHello! Thank you for dining at Indian Palace today!
         What style of Indian food do you have a taste for? 
         1: "North Indian, $22"
         2: "South Indian, $22"
         3: "Indian Asian Fusion, $26"
         \n'''))) - 1]
+        # if food_style_choices == 0 or 1 or 2:
+        #     return order_placed #user makes a choice
+        # else:
+        #     self.place_order() #repeat until user enters a valid choice
     
-        if food_style_choices == 0 or 1 or 2:
-            return order_placed #user makes a choice
-        else:
-            self.place_order() #repeat until user enters a valid choice
-    
-    
-        # while _ in location: 
-        #        print(f'What would you like to buy at the {location} restaurant?')
-            
-    
-    
-    
-    # def order_location(self):
-    #     location_number = [1, 2, 3]      
-    #     order_location = location_number[(int(input('''Where would you like to buy your food? 
-    #     1: "Brooklyn"
-    #     2: "Queens"
-    #     3: "Manhattan"
-    #     '''))) - 1]
-    
-    #     if order_location == 0 or 1 or 2:
-    #         return order_location #user makes a choice
+        transaction = Logger()
+        transaction.log_transaction(Order, location_number)
+        
+    # def place_order(self):
+    #     food_style_choices = [1, 2, 3]
+    #     order_placed = food_style_choices[(int(input(f'''\nHello! Thank you for dining at Indian Palace today!
+    #     What style of Indian food do you have a taste for? 
+    #     1: "North Indian, $22"
+    #     2: "South Indian, $22"
+    #     3: "Indian Asian Fusion, $26"
+    #     \n'''))) - 1]
+    #     if food_style_choices == 0 or 1 or 2:
+    #         return order_placed  # user makes a choice
     #     else:
-    #         self.order_location()  # repeat until user enters a valid choice
-    
-        # use the static Factory method to get an OBJECT based on what choice the user made
+    #         self.place_order()  # repeat until user enters a valid choice
+
+    #     log_transaction = Logger()
+    #     log_transaction.log_transaction()
+
+
+
+  #single instance of a Logger object inside the logger.py file and import this instance into the Franchise class to be shared by all instantiations
+   #     call the logger.log_transaction() method to log the order to the log.txt file
+
+
+         
+     # use the static Factory method to get an OBJECT based on what choice the user made
         # # depending on what number is typed in for order_placed, call the Factory method and pass in the appropraite string
         
         # The place_order() method should:
         #     call the static OrderFactory.create_order() method to instantiate an order object.
-        #     call the logger.log_transaction() method to log the order to the log.txt file
- 
+    
