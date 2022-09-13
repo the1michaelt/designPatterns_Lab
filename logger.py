@@ -17,23 +17,23 @@ class Logger:
              import this instance into the Franchise class to be shared by all instantiations.
         """        
 
-    def log_transaction(self, sales, count):
-        self.daily_sales = sales
+    def log_transaction(self, Order, count):
+        self.daily_sales = Order()
         self.transaction_count = count
         
-        # order_placed # the number of the product
-        # order_location # number of the location
-        # transaction_count +=1  #each transaction increases the count by one
-        # self.daily_sales += order_placed.price #add order price to the daily sales
-        
+        order_placed # the number of the product
+        order_location # number of the location
+        transaction_count +=1  #each transaction increases the count by one
+        self.daily_sales += order_placed.price #add order price to the daily sales
+      
             
-    def write_to_log(word):
+    def write_to_log(word): #well formatted message
         activity = open("log.txt", "a")
         activity.write(f"{transaction_count}: {order_placed} at {order_location}-- {order_price} Total: {daily_sales}\n")
         activity.close()
-        activity.write_to_log(word)  # this?
+        activity.write_to_log(word)  #one instantiation
 
-    write_to_log("great")
+    write_to_log("* * Transaction Log * *")
 
 ####
 # from chat_history import chat_history

@@ -1,7 +1,6 @@
 # from ast import main
 from franchise import Franchise
 # main
-# franchise
 
 class Simulation:
     """create a Simulation class with a run_simulation() method to act as a facade pattern.
@@ -13,8 +12,13 @@ class Simulation:
     def __init__(self):
         pass
 
-    def run_simulation(self):
-        pass
+    def run_simulation(self): #instantiates an order by each (of the three) locations
+        location1_order = Franchise()
+        location2_order = Franchise()
+        location3_order = Franchise()
+        location1_order.place_order()
+        location2_order.place_order()
+        location3_order.place_order()
 
     # OrderFactory.create_order()
 

@@ -1,4 +1,4 @@
-from logger import logger
+from logger import Logger
 from order_factory import OrderFactory
 
 class Franchise:
@@ -7,11 +7,11 @@ class Franchise:
             Instantiate 3 separate Franchise objects .
         Call place_order on each franchise object multiple times.
     """    
-    def __init__(self, number, options):
-        self.location_number = number
-        self.options = options
-    
-        
+    def __init__(self, location):
+        self.location_number = location
+      
+        # Focus on instantiating the objects and passing in the location.
+
     def place_order(self):
         food_style_choices = [1, 2, 3]      
         order_placed = food_style_choices[(int(input('''\nHello! Thank you for dining at Indian Palace today!
@@ -25,6 +25,13 @@ class Franchise:
             return order_placed #user makes a choice
         else:
             self.place_order() #repeat until user enters a valid choice
+    
+    
+        # while _ in location: 
+        #        print(f'What would you like to buy at the {location} restaurant?')
+            
+    
+    
     
     # def order_location(self):
     #     location_number = [1, 2, 3]      
