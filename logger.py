@@ -3,8 +3,8 @@ class Logger:
     def __init__(self):
         """create a Logger class with a log_transaction() method 
         that will accept an Order object and store number and:
-            Increase the Logger’s transaction_count by one
-            Add the price of the Order object to the Logger’s daily income
+            Increase the Logger's transaction_count by one
+            Add the price of the Order object to the Logger's daily income
             Open the log.txt file
             
             Write a well-formatted message to the log.txt file containing the current transaction count, 
@@ -18,15 +18,15 @@ class Logger:
         self.daily_sales = 0
         self.transaction_count = 0
         
-    def log_transaction(self, Order, location_number):
+    # def log_transaction(self, daily_sales, food_price, location_number):
+    def log_transaction(self, Order, ):
         self.transaction_count += 1  # each transaction increases the count by one
-        self.daily_sales += self.food_price  # add order price to the daily sales
+        # self.daily_sales += self.food_price  # add order price to the daily sales
         activity = open("log.txt", "a")  # Open the text document
+        # activity.write(
+        #    f'Transaction #{self.transaction_count}: Total: {self.daily_sales}\n')
         activity.write(
-            f'{self.transaction_count}: {self.food_style} at {location_number}-- {self.food_price} Total: {daily_sales}\n')
-        activity.close()  # Remember to close the file
-        
-        
+            f'Transaction #{self.transaction_count}: {self.order_placed} at {self.location_number}-- {self.food_price} Total: {self.daily_sales}\n')        activity.close()  # Remember to close the file
         
       # order_placed # the number of the product
         # order_location # number of the location

@@ -26,9 +26,11 @@ class Franchise:
         #     return order_placed #user makes a choice
         # else:
         #     self.place_order() #repeat until user enters a valid choice
-    
+        
+        order_proceed = OrderFactory.create_order(order_placed)
         transaction = Logger()
-        transaction.log_transaction(Order, location_number)
+        transaction.log_transaction(OrderFactory)
+        # transaction.log_transaction(OrderFactory, location_number)
         
     # def place_order(self):
     #     food_style_choices = [1, 2, 3]
