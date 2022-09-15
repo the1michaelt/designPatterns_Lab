@@ -17,11 +17,11 @@ class OrderFactory:
     def create_order(order_placed): #string; Order is the parameter? 
         """ Based on the input value (the order), an object is created (the type of food)
         """        
-        if order_placed == 0:
+        if order_placed == "North Indian":
             return NorthIndianFare()  #STATIC METHOD-- method called off the class itself
-        elif order_placed == 1:
+        elif order_placed == "South Indian":
             return SouthIndianFare()
-        else: 
+        elif order_placed == "Indian Asian Fusion":
             return IndoAsianFusion()
 
        

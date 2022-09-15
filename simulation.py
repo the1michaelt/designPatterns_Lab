@@ -24,11 +24,4 @@ class Simulation:
         location3_order.place_order()
         location3_order.place_order()
 
-    # OrderFactory.create_order()
-
-    # @staticmethod
-    # factory_order= OrderFactory() method to instantiate an order object.
-    
-    # def log_the_transaction(self, word):# call the logger.log_transaction()
-    #     write_to_log.activity.append(word) 
-
+  

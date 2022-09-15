@@ -4,4 +4,4 @@ class IndoAsianFusion(Order):
     """Child class, "Indian Asian Fusion"
     """    
     def __init__(self):
-        super().__init__(2, 26)
+        super().__init__("Indian Asian Fusion", 26)

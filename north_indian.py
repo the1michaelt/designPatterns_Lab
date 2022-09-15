@@ -4,7 +4,7 @@ class NorthIndianFare(Order):
     """Child class, "North Indian"
     """    
     def __init__(self):
-        super().__init__(0, 22) #0 is the choice for "North Indian"
+        super().__init__("North Indian", 22) #0 is the choice for "North Indian"
 
         
         

@@ -1,19 +1,1 @@
 
-
-1: at -- Total:
- Transaction #1: at -- Total:
- Transaction #1: at -- Total:
- Transaction #1: at -- Total:
- Transaction #1: at -- Total:
- Transaction #1: at -- Total:
- Transaction #1: at -- Total:
-1: Total: 0
-1: Total: 0
-1: Total: 0
-1: Total: 0
-1: Total: 0
-1: Total: 0
-Transaction #1: Total: 0
-Transaction #1: Total: 0
-Transaction #1: Total: 0
-Transaction #1: Total: 0
